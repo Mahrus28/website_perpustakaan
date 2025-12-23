@@ -1,0 +1,73 @@
+body {
+    background: #f4f6f8;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    margin: 10px 0 20px;
+}
+
+/* BUTTON BACK */
+.btn-back {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    background: #34495e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-back:hover {
+    background: #2c3e50;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.table th {
+    background: #2c3e50;
+    color: white;
+    padding: 12px;
+}
+
+.table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr:hover {
+    background: #f8f9fa;
+}
+
+/* BUTTON */
+.btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.btn.kembali {
+    background: #27ae60;
+}
+
+.btn.kembali:hover {
+    background: #219150;
+}

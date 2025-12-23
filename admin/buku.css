@@ -1,0 +1,469 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    color:#1f2937;
+}
+
+.container{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+/* CARD FORM */
+.card{
+    background:#ffffff;
+    padding:28px;
+    border-radius:18px;
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+    margin-bottom:40px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px 16px;
+    margin-bottom:14px;
+    border-radius:12px;
+    border:1px solid #e5e7eb;
+    font-size:14px;
+}
+
+input:focus, textarea:focus{
+    outline:none;
+    border-color:#3b82f6;
+    box-shadow:0 0 0 3px rgba(59,130,246,.15);
+}
+
+textarea{
+    min-height:120px;
+}
+
+/* BUTTON */
+button{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+    color:#fff;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    font-size:14px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+/* LIST */
+.list{
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.item{
+    background:#ffffff;
+    padding:18px 22px;
+    border-radius:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+.item h4{
+    margin-bottom:4px;
+}
+
+.item p{
+    font-size:13px;
+    color:#6b7280;
+}
+
+/* DELETE */
+.hapus{
+    background:#ef4444;
+    color:#fff;
+    padding:6px 16px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.hapus:hover{
+    background:#dc2626;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .item{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
+/* UPLOAD */
+.upload{
+    display:block;
+    background:#eef2ff;
+    color:#4338ca;
+    padding:12px 18px;
+    border-radius:14px;
+    margin-bottom:14px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.upload input{
+    display:none;
+}
+
+/* COVER */
+.cover{
+    width:70px;
+    height:90px;
+    object-fit:cover;
+    border-radius:8px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* ITEM */
+.item{
+    gap:18px;
+}
+
+.info{
+    flex:1;
+}
+
+
+/* EDIT BUKU */
+* {
+    font-family: 'Segoe UI', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f6f8;
+    margin: 0;
+}
+
+/* NAV */
+.nav {
+    background: #2c3e50;
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav a.active {
+    border-bottom: 3px solid #1abc9c;
+}
+
+.nav .logout {
+    margin-left: auto;
+    color: #ff7675;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+    margin-bottom: 25px;
+}
+
+.card input, .card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* UPLOAD */
+.upload {
+    display: block;
+    padding: 10px;
+    background: #ecf0f1;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.upload input {
+    display: none;
+}
+
+/* BUTTON */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #1abc9c;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* LIST */
+.list {
+    display: grid;
+    gap: 15px;
+}
+
+.item {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.07);
+}
+
+.cover {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.info {
+    flex: 1;
+}
+
+.aksi a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.edit {
+    background: #3498db;
+    color: white;
+}
+
+.hapus {
+    background: #e74c3c;
+    color: white;
+}
+
+
+/* STATISTIK */
+.statistik {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.statistik .box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+
+.statistik .box h3 {
+    font-size: 32px;
+    margin: 0;
+    color: #1abc9c;
+}
+
+.statistik .box p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.statistik .danger h3 {
+    color: #e74c3c;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.thumb {
+    width: 45px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* STOK */
+.stok-ada {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.stok-habis {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.btn.edit {
+    background: #3498db;
+}
+
+.btn.hapus {
+    background: #e74c3c;
+}
+
+/* === TABEL DATA BUKU === */
+/* === TABEL DATA BUKU === */
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    font-size: 14px;
+}
+
+/* HEADER */
+.table thead th {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 10px;
+    text-align: center;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* BODY */
+.table tbody td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* KOLOM JUDUL */
+.table td:nth-child(3) {
+    text-align: left;
+    font-weight: 600;
+}
+
+/* COVER */
+.thumb {
+    width: 45px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+}
+
+/* STOK */
+.stok-ada {
+    background: #e8f8f0;
+    color: #27ae60;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.stok-habis {
+    background: #fdecea;
+    color: #e74c3c;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* AKSI */
+.table td:last-child {
+    white-space: nowrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin: 2px;
+    transition: .2s;
+}
+
+.btn.edit {
+    background: #3498db;
+}
+
+.btn.edit:hover {
+    background: #2980b9;
+}
+
+.btn.hapus {
+    background: #e74c3c;
+}
+
+.btn.hapus:hover {
+    background: #c0392b;
+}
+
+/* buttom back to dashboard */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}

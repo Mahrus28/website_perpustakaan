@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    margin: 0;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+/* BUTTON BACK */
+.btn-back {
+    background: #34495e;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn-back:hover {
+    background: #2c3e50;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    transition: transform .2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* COVER */
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* INFO */
+.info {
+    padding: 12px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    font-size: 15px;
+}
+
+.penulis {
+    font-size: 13px;
+    color: #555;
+}
+
+.tahun {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+/* STOK */
+.stok {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tersedia {
+    background: #e8f8f0;
+    color: #27ae60;
+}
+
+.habis {
+    background: #fdecea;
+    color: #e74c3c;
+}

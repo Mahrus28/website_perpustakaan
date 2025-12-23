@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* BACK */
+.btn-back {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 14px;
+    background: #34495e;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* FORM */
+/* ===== FORM PINJAMAN ===== */
+.form-pinjaman {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr auto;
+    gap: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    align-items: center;
+}
+
+.form-pinjaman input,
+.form-pinjaman select {
+    width: 100%;
+    padding: 14px 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background: #fff;
+}
+
+.form-pinjaman input:focus,
+.form-pinjaman select:focus {
+    outline: none;
+    border-color: #1abc9c;
+    box-shadow: 0 0 0 2px rgba(26,188,156,.15);
+}
+
+/* BUTTON TAMBAH */
+.form-pinjaman button {
+    height: 52px;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0 18px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-pinjaman button:hover {
+    background: #16a085;
+}
+
+
+/* SEARCHABLE SELECT */
+.select-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-box .search {
+    margin-bottom: 4px;
+}
+
+/* TABLE */
+.table {
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 0 6px 16px rgba(0,0,0,.08);
+}
+
+.table th {
+    background: #2c3e50;
+    color: white;
+    padding: 14px;
+}
+
+.table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* STATUS */
+.status {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.dipinjam { background: #f1c40f; color: #7d6608; }
+.status.kembali { background: #e8f8f0; color: #27ae60; }
+.status.hilang  { background: #fdecea; color: #e74c3c; }
+
+/* AKSI */
+.aksi {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.btn.kembali { background: #27ae60; }
+.btn.hilang  { background: #e74c3c; }

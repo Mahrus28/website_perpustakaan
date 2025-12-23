@@ -1,0 +1,71 @@
+body {
+    background: #f4f6f8;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+}
+
+.card input, .card textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.table {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,.08);
+}
+
+.table th {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.thumb {
+    width: 40px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 6px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.btn.edit { background: #3498db; }
+.btn.hapus { background: #e74c3c; }
